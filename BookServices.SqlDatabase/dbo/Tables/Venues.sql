@@ -2,7 +2,7 @@
 (
 	[Id] INT IDENTITY(1,1) NOT NULL,
 	[Name] VARCHAR(100) NOT NULL,
-	[Describe] VARCHAR (200),
+	[Description] VARCHAR (200),
 	[PhoneNumber] VARCHAR (20),
 	[Street] VARCHAR(50) NOT NULL,
 	[PostCode] VARCHAR(10),

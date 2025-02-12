@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[Venues]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[Name] VARCHAR(100) NOT NULL,
+	[Describe] VARCHAR (200),
+	[PhoneNumber] VARCHAR (20),
+	[Street] VARCHAR(50) NOT NULL,
+	[PostCode] VARCHAR(10),
+	[City] VARCHAR (50) NOT NULL,
+	[CreateDate] DATETIMEOFFSET NOT NULL,
+	[CreatedBy] INT NOT NULL,
+	CONSTRAINT [PK_Venues] PRIMARY KEY CLUSTERED ([Id] ASC)
+)

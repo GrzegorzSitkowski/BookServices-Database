@@ -63,5 +63,6 @@
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\Accounts.sql" />
     <Build Include="dbo\Tables\AccountUsers.sql" />
+    <Build Include="dbo\Tables\Venues.sql" />
   </ItemGroup>
 </Project>

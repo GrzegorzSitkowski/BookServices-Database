@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Services]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[VenueId] INT NOT NULL,
+	[Name] VARCHAR (50) NOT NULL,
+	[Description] VARCHAR (200) NOT NULL,
+	[Price] VARCHAR (10) NOT NULL,
+	[Time] VARCHAR (20) NOT NULL,
+	[CreatedBy] INT NOT NULL,
+	CONSTRAINT [PK_Services] PRIMARY KEY CLUSTERED ([Id] ASC),
+	CONSTRAINT [FK_Services_Venues] FOREIGN KEY ([VenueId]) REFERENCES [dbo].[Venues] ([Id]) ON DELETE CASCADE,
+)
